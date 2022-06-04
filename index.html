@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/CssReset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>CV</title>
+</head>
+
+<body id="myroot">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 p-0">
+                <div class="infoCard">
+                    <div class="myCard">
+                        <div class="headCard">
+                            <div class="imgCon">
+                                <div class="img"></div>
+                            </div>
+                            <div class="title">
+                                <h3>Alaa Ezzat</h3>
+                                <p>Front End Developer</p>
+                            </div>
+                        </div>
+                        <div class="cardBody">
+                            <div class="info">
+                                <ul>
+                                    <li>
+                                        <h6>Residence:</h6><span>Cairo</span>
+                                    </li>
+                                    <li>
+                                        <h6>Military Status:</h6><span>Completed</span>
+                                    </li>
+                                    <li>
+                                        <h6>Age:</h6><span>25</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="skills">
+                                <h3>Skills</h3>
+                                <ul>
+                                    <li class="skill html">
+                                        <div class="d-flex justify-content-between">
+                                            <span>HTML</span>
+                                            <span>90%</span>
+                                        </div>
+                                        <div class="con w-100">
+                                            <div class="val">
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="skill css">
+                                        <div class="d-flex justify-content-between">
+                                            <span>CSS</span>
+                                            <span>75%</span>
+                                        </div>
+                                        <div class="con w-100">
+                                            <div class="val">
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="skill js">
+                                        <div class="d-flex justify-content-between">
+                                            <span>JavaScript</span>
+                                            <span>70%</span>
+                                        </div>
+                                        <div class="con w-100">
+                                            <div class="val">
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="skill angular">
+                                        <div class="d-flex justify-content-between">
+                                            <span>Angular</span>
+                                            <span>60%</span>
+                                        </div>
+                                        <div class="con w-100">
+                                            <div class="val">
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="knowledge">
+                                <li><i class="fa-solid fa-check"></i> Bootstrap</li>
+                                <li><i class="fa-solid fa-check"></i>Sass, Pugjs</li>
+                                <li><i class="fa-solid fa-check"></i>Gulp, Webpack</li>
+                                <li><i class="fa-solid fa-check"></i>GIT knowledge</li>
+                            </ul>
+                            <button class="btn">Download CV</button>
+                        </div>
+                        <ul class="contacts">
+                            <li><i class="fa-brands fa-facebook"></i></li>
+                            <li><i class="fa-brands fa-linkedin"></i></li>
+                            <li><i class="fa-brands fa-instagram"></i></li>
+                            <li><i class="fa-brands fa-twitter"></i></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9 p-0">
+                <div class="allContent">
+                    <div class="overlay"></div>
+                    <section class="myNav">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                            <div class="container-fluid">
+                                <a class="navbar-brand" href="#"><Span>.</Span>3laa</a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#about">About</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#Skills">Skills</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#Protfolio">Protfolio</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#education">Education</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#Contact">contact</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <ul class="colors">
+                                                <li id="one" class="color one">
+                                                </li>
+                                                <li id="two" class="color two"></li>
+                                                <li id="three" class="color three">
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                        <!-- Music -->
+                        <div class="music">
+                            <i class="fa-solid fa-music" onclick="play()"></i>
+                            <div id="audio" style="display: none;"></div>
+                        </div>
+                        <!-- End music -->
+                    </section>
+                    <section id="banar">
+                        <div class="row h-100">
+                            <div class="overlay"></div>
+                            <div class="col-md-8 h-100">
+                                <div class="content">
+                                    <div class="text">
+                                        <h1>Discover my Amazing Website</h1>
+                                        <h3 id="code">
+                                            <span id="span1"></span>
+                                            <span id="typing"></span>
+                                            <span id="span2"></span>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="banarImg">
+                                    <div class="img"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="experiance">
+                        <div class="row">
+                            <div class="col-md-4 col-6">
+                                <div class="ex d-flex">
+                                    <div class="num">
+                                        <span>+</span>
+                                        <span id="years">1</span>
+                                    </div>
+                                    <p>Years Experience</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-6">
+                                <div class="ex d-flex">
+                                    <div class="num">
+                                        <span>+</span>
+                                        <span id="projects">1</span>
+                                    </div>
+                                    <p>Completed Projects</p>
+                                </div>
+                            </div>
+                            <div class=" col-md-4 col-6">
+                                <div class="ex d-flex">
+                                    <div class="num">
+                                        <span>+</span>
+                                        <span id="customer">1</span>
+                                    </div>
+                                    <p>Happy Customers</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="about">
+                        <h3>About</h3>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="intro ">
+                                    <div class="header-con">
+                                        <h2 class="intro-head">Hello I'm Alaa Ezzat </h2>
+                                    </div>
+                                    <p> I am a Front end Developer From Egypt.I am trying to keep in touch with
+                                        updates of our field, web features and modern designs,
+                                        i do all of my best to maximizing the benefit of simplicity and
+                                        elegance that we commit to in all my projects.</p>
+                                </div>
+                                <div class="lang">
+                                    <h2 class="header">Languages</h2>
+                                    <div class="row">
+                                        <div class="arabic col-4">
+                                            <div id="circleprog1" class="myprogress">
+                                                <div id="shape1" class="shape">
+                                                    <svg viewBox="0 0 100 100">
+                                                        <path id="cr1" class="cr"
+                                                            d="M 50,50 m 0,-46.5 a 46.5,46.5 0 1 1 0,93 a 46.5,46.5 0 1 1 0,-93"
+                                                            stroke="#eee" stroke-width="7" fill-opacity="0"></path>
+                                                        <path id="crAr" class="cr2"
+                                                            d="M 50,50 m 0,-46.5 a 46.5,46.5 0 1 1 0,93 a 46.5,46.5 0 1 1 0,-93"
+                                                            stroke-width="7" fill-opacity="0">
+                                                        </path>
+                                                    </svg>
+                                                    <div class="progressbar-text"><span id="ar">0</span>%</div>
+                                                </div>
+                                                <h3>Arabic</h3>
+                                            </div>
+                                        </div>
+                                        <div class="english col-4">
+                                            <div id="circleprog2" class="myprogress">
+                                                <div id="shape2" class="shape">
+                                                    <svg viewBox="0 0 100 100">
+                                                        <path id="cr2" class="cr"
+                                                            d="M 50,50 m 0,-46.5 a 46.5,46.5 0 1 1 0,93 a 46.5,46.5 0 1 1 0,-93"
+                                                            stroke="#eee" stroke-width="7" fill-opacity="0"></path>
+                                                        <path id="crEn" class="cr2"
+                                                            d="M 50,50 m 0,-46.5 a 46.5,46.5 0 1 1 0,93 a 46.5,46.5 0 1 1 0,-93"
+                                                            stroke-width="7" fill-opacity="0">
+                                                        </path>
+                                                    </svg>
+                                                    <div class="progressbar-text"><span id="en">0</span>%</div>
+                                                </div>
+                                                <h3>English</h3>
+                                            </div>
+                                        </div>
+                                        <div class="frensh col-4">
+                                            <div id="circleprog3" class="myprogress">
+                                                <div id="shape3" class="shape">
+                                                    <svg viewBox="0 0 100 100">
+                                                        <path id="cr3" class="cr"
+                                                            d="M 50,50 m 0,-46.5 a 46.5,46.5 0 1 1 0,93 a 46.5,46.5 0 1 1 0,-93"
+                                                            stroke="#eee" stroke-width="7" fill-opacity="0"></path>
+                                                        <path id="crFr" class="cr2"
+                                                            d="M 50,50 m 0,-46.5 a 46.5,46.5 0 1 1 0,93 a 46.5,46.5 0 1 1 0,-93"
+                                                            stroke-width="7" fill-opacity="0">
+                                                        </path>
+                                                    </svg>
+                                                    <div class="progressbar-text"><span id="fr">0</span>%</div>
+                                                </div>
+                                                <h3>Frensh</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="info">
+                                    <div class="header-con">
+                                        <h2 class="intro-head">Personal information</h2>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <label>Name : </label>
+                                            <span>Alaa Ezzat Zakaria Awadallah</span>
+                                        </li>
+                                        <hr>
+                                        <li>
+                                            <label>D.O.B : </label>
+                                            <span>25/5/1997</span>
+                                        </li>
+                                        <hr>
+                                        <li>
+                                            <label>address : </label>
+                                            <span>Cairo, Egypt</span>
+                                        </li>
+                                        <hr>
+                                        <li>
+                                            <label>Military Status : </label>
+                                            <span>Completed</span>
+                                        </li>
+                                        <hr>
+                                        <li>
+                                            <label>G-mail : </label>
+                                            <span><a href="alaa.awadallah97@gmail.com">alaa.awadallah97
+                                                    @gmail.com</a></span>
+                                        </li>
+                                        <hr>
+                                        <li>
+                                            <label>Github : </label>
+                                            <span><a
+                                                    href="https://github.com/AlaaEzzzat">https://github.com/AlaaEzzzat</a></span>
+                                        </li>
+                                        <hr>
+                                        <li>
+                                            <label>Phone : </label>
+                                            <span>01018293014</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                            </div>
+                        </div>
+                    </section>
+                    <section id="Skills">
+                        <h2 class="header text-center">Skills</h2>
+                        <div class="mySkills">
+                            <div class="row">
+                                <div class="col-lg-3 col-4">
+                                    <div class="skill">
+                                        <div class="img html">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-4">
+                                    <div class="skill">
+                                        <div class="img css">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-4">
+                                    <div class="skill">
+                                        <div class="img bootstrap">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-4">
+                                    <div class="skill">
+                                        <div class="img js">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-4">
+                                    <div class="skill">
+                                        <div class="img angular">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-4">
+                                    <div class="skill">
+                                        <div class="img sass">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-4">
+                                    <div class="skill">
+                                        <div class="img pug">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-4">
+                                    <div class="skill">
+                                        <div class="img gulp">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-4">
+                                    <div class="skill">
+                                        <div class="img git">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="Protfolio">
+                        <div class="myPortfolio">
+                            <h2 class="header-con">Portfolio</h2>
+                            <div class="tabs">
+                                <ul class="list-unstyled row">
+                                    <li data-item="all" class="col-lg col-sm-3" onclick="showPro(this)">all</li>
+                                    <li data-item="akla" class="col-lg col-sm-3 " onclick="showPro(this)">Akla</li>
+                                    <li data-item="mypc" class="col-lg col-sm-3 " onclick="showPro(this)">MyPC</li>
+                                    <li data-item="carCamp" class="col-lg col-sm-3 " onclick="showPro(this)">Car Camp
+                                    </li>
+                                    <li data-item="mawdoo3" class="col-lg col-sm-3 " onclick="showPro(this)">Mawdoo3
+                                    </li>
+                                    <li data-item="dentCare" class="col-lg col-sm-3 " onclick="showPro(this)">DentCare
+                                    </li>
+                                    <li data-item="amazon" class="col-lg col-sm-3 " onclick="showPro(this)">Amazon</li>
+                                </ul>
+                            </div>
+                            <div class="shuffle-image ">
+                                <div class="row ">
+                                    <div class="proContainetr col-md-4">
+                                        <div id="akla" class="project akla">
+                                            <div class="content">
+                                                <div class="header">
+                                                    <h3>Akla</h3>
+                                                </div>
+                                                <p> it is website shows our resturant and some Foods</p>
+                                                <a target="_blank" href="https://alaaezzzat.github.io/Akla/"
+                                                    class="show">See it</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="proContainetr col-md-4">
+                                        <div id="dentCare" class="project dentCare">
+                                            <div class="content">
+                                                <div class="header">
+                                                    <h3>DentCare</h3>
+                                                </div>
+                                                <p> it is website shows our Clinic and some Services</p>
+                                                <a target="_blank" href="https://alaaezzzat.github.io/DentCare/"
+                                                    class="show">See it</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="proContainetr col-md-4">
+                                        <div id="mypc" class="project mypc">
+                                            <div class="content">
+                                                <div class="header">
+                                                    <h3>MyPC</h3>
+                                                </div>
+                                                <p> it is website shows some PCs of brands from many laptops</p>
+                                                <a href="https://alaaezzzat.github.io/MyPc/" target="_blank"
+                                                    class="show">See it</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="proContainetr col-md-4">
+                                        <div id="mawdoo3" class="project mawdoo3">
+                                            <div class="content">
+                                                <div class="header">
+                                                    <h3>Mawdoo3</h3>
+                                                </div>
+                                                <p> This website is a new design of one of the best websites in the
+                                                    world called (موضوع)</p>
+                                                <a href="https://alaaezzzat.github.io/Mawdoo3/" target="_blank"
+                                                    class="show">See it</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="proContainetr col-md-4">
+                                        <div id="carCamp" class="project carCamp">
+                                            <div class="content">
+                                                <div class="header">
+                                                    <h3>Car Camp</h3>
+                                                </div>
+                                                <p> it is website shows some cars from many brands</p>
+                                                <a href="https://alaaezzzat.github.io/CarCamp/" target="_blank"
+                                                    class="show">See it</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="proContainetr col-md-4">
+                                        <div id="amazon" class="project amazon">
+                                            <div class="content">
+                                                <div class="header">
+                                                    <h3>Amazon</h3>
+                                                </div>
+                                                <p> As a try to make new design to Amazon website</p>
+                                                <a href="https://alaaezzzat.github.io/" target="_blank" class="show">See
+                                                    it</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="education">
+                        <h2 class="header-con text-center">
+                            Education
+                        </h2>
+                        <div class="row">
+                            <div class="col-md-6 fci item">
+                                <div class="card">
+                                    <span class="from">From 2015 To 2019</span>
+                                    <div class="card-body">
+                                        <h5 class="card-title">BA: information systems Dept</h5>
+                                        <h6 class="card-subtitle mb-2">Faculty of Computers And Information
+                                        </h6>
+                                        <div class="card-text">
+                                            <ul>
+                                                <li>Graduated By 70% GPA</li>
+                                                <li>Coursework in java, MySQL, C++, MongoDB and web designing</li>
+                                                <li>Member of MUFIX Community</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row flex-row-reverse">
+                            <div class="col-md-6 school item">
+                                <div class="card">
+                                    <span class="from">From 2012 To 2015</span>
+                                    <div class="card-body">
+                                        <h5 class="card-title">High school Student</h5>
+                                        <h6 class="card-subtitle mb-2">Damanhour Secondary School
+                                        </h6>
+                                        <div class="card-text">
+                                            <ul>
+                                                <ul>
+                                                    <li>Succeeded by 93% GPA</li>
+                                                    <li>Elected Captain of School Football team</li>
+                                                    <li>Member of Students's Union</li>
+                                                </ul>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="Contact">
+                        <div class="contact">
+                            <h2 class="header-con">All ways to Contact</h2>
+                            <div class="row justify-content-center">
+                                <div class="col-md-5 fly">
+                                    <div class="imgContainer ">
+                                        <img src="img/contact.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="links">
+                                        <ul class="ways">
+                                            <li class="imgCon">
+                                                <div class="img"></div>
+                                            </li>
+                                            <li class="social linkedin">
+                                                <a href="https://www.linkedin.com/in/alaa-ezzat-158107132/">
+                                                    <i class="fa-brands fa-linkedin"></i>
+                                                </a>
+                                            </li>
+                                            <li class=" social facebook">
+                                                <a href="https://www.facebook.com/Alaa.Ezzat.93">
+                                                    <i class="fa-brands fa-facebook"></i>
+                                                </a>
+                                            </li>
+                                            <li class="social messenger">
+                                                <a href="https://www.facebook.com/Alaa.Ezzat.93">
+                                                    <i class="fa-brands fa-facebook-messenger"></i>
+                                                </a>
+                                            </li>
+                                            <li class="social mail">
+                                                <a href="mailto:alaa.awadallah97@gmail.com">
+                                                    <i class="fa fa-envelope"></i>
+                                                </a>
+                                            </li>
+                                            <li class="social whatsapp">
+                                                <a href="https://api.whatsapp.com/send/?phone=201018293014">
+                                                    <i class="fa-brands fa-whatsapp"></i>
+                                                </a>
+                                            </li>
+                                            <li class="social twitter">
+                                                <a href="https://twitter.com/Alaa_Ezzzat">
+                                                    <i class="fa-brands fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li class="social instagram">
+                                                <a href="">
+                                                    <i class="fa-brands fa-instagram"></i>
+                                                </a>
+                                            </li>
+                                            <li class="social github">
+                                                <a href="https://github.com/AlaaEzzzat">
+                                                    <i class="fa-brands fa-github"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr"></div>
+                        <div class="copyRight text-center">
+                            <p>All CopyRight &copy; Reserved to <span>Alaa Ezzat</span></p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/fontawesome.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
