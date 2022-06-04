@@ -1361,7 +1361,7 @@ body::-webkit-scrollbar-thumb,
     font-size: 23px !important;
   }
   .allContent #about ul {
-    padding-left: 0;
+    padding-left: 0 !important;
   }
   .allContent #about ul li span {
     display: block;
