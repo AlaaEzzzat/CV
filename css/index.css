@@ -572,8 +572,8 @@ body::-webkit-scrollbar-thumb,
 .allContent #about .row .lang {
   height: auto;
   padding: 20px;
-  padding-bottom: 29px;
-  margin-bottom: 0;
+  padding-bottom: 19px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -979,8 +979,8 @@ body::-webkit-scrollbar-thumb,
 .allContent #education .row .card .from {
   position: absolute;
   font-size: 18px -3;
-  top: 22px;
-  right: 15px;
+  top: 5px;
+  right: 5px;
   padding: 5px;
   border-radius: 5px;
   border: 1px solid #00ffff;
@@ -1341,6 +1341,12 @@ body::-webkit-scrollbar-thumb,
   .music {
     left: 25px;
     top: 100px;
+  }
+}
+
+@media (max-width: 465px) {
+  .allContent #Contact .copyRight p {
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=index.css.map */

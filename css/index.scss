@@ -80,15 +80,19 @@ $standerdFont: 18px;
     .fa-linkedin:hover {
         color: #18668a;
     }
+
     .fa-facebook-messenger:hover {
         color: #00aeff;
     }
+
     .fa-envelope:hover {
         color: #d2f556;
     }
+
     .fa-github:hover {
         color: #828a8d;
     }
+
     .fa-whatsapp:hover {
         color: #1bdf5c;
     }
@@ -566,11 +570,11 @@ body::-webkit-scrollbar-thumb,
                 @extend .mydiv;
                 height: auto;
                 padding: 20px;
-                padding-bottom: 29px;
-                margin-bottom: 0;
+                padding-bottom: 19px;
+                margin-bottom: 10px;
 
                 .header {
-                    font-size: $standerdFont+5;
+                    font-size: $standerdFont + 5;
                     margin-bottom: 30px;
                     color: $HColor;
                 }
@@ -624,7 +628,7 @@ body::-webkit-scrollbar-thumb,
                 }
 
                 h3 {
-                    font-size: $standerdFont+3;
+                    font-size: $standerdFont + 3;
                     margin-top: 5px;
                 }
 
@@ -725,6 +729,7 @@ body::-webkit-scrollbar-thumb,
 
             .tabs {
                 padding: 10px 30px;
+
                 ul {
                     li {
                         text-align: center;
@@ -871,8 +876,8 @@ body::-webkit-scrollbar-thumb,
                 .from {
                     position: absolute;
                     font-size: $standerdFont -3;
-                    top: 22px;
-                    right: 15px;
+                    top: 5px;
+                    right: 5px;
                     padding: 5px;
                     border-radius: 5px;
                     border: 1px solid $HColor;
@@ -1016,6 +1021,7 @@ body::-webkit-scrollbar-thumb,
                                 font-size: $standerdFont + 25;
 
                             }
+
                             @extend .socialHover;
                         }
                     }
@@ -1239,6 +1245,18 @@ body::-webkit-scrollbar-thumb,
     .music {
         left: 25px;
         top: 100px;
+    }
+
+}
+@media (max-width:465px) {
+    .allContent {
+        #Contact {
+            .copyRight {
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
     }
 
 }
