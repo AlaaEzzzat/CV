@@ -1345,6 +1345,28 @@ body::-webkit-scrollbar-thumb,
 }
 
 @media (max-width: 465px) {
+  .allContent #banar .content .text .header {
+    font-size: 23px;
+  }
+  .allContent #banar .content .text #code {
+    font-size: 15px;
+  }
+  .allContent #about .lang .progressbar-text {
+    font-size: 14px !important;
+  }
+  .allContent #about .lang h3 {
+    font-size: 16px !important;
+  }
+  .allContent #about .header-con .intro-head {
+    font-size: 23px !important;
+  }
+  .allContent #about ul {
+    padding-left: 0;
+  }
+  .allContent #about ul li span {
+    display: block;
+    font-size: 16px;
+  }
   .allContent #Contact .copyRight p {
     font-size: 18px;
   }

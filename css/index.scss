@@ -1250,6 +1250,43 @@ body::-webkit-scrollbar-thumb,
 }
 @media (max-width:465px) {
     .allContent {
+        #banar{
+            .content{
+                .text{
+                    .header{
+                        font-size: 23px;
+                    }
+                    #code{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        #about{
+            .lang{
+                .progressbar-text{
+                    font-size: 14px !important;
+                }
+                h3{
+                    font-size: 16px !important;
+                }
+            }
+            .header-con{
+                .intro-head{
+                    font-size: 23px !important;
+                }
+            }
+            ul{
+                padding-left: 0;
+                li{
+                    span{
+                        display: block;
+                        font-size: 16px;
+                        
+                    }
+                }
+            }
+        }
         #Contact {
             .copyRight {
                 p {
