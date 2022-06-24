@@ -14,1286 +14,1272 @@ $HColor: #00ffff;
 $standerdFont: 18px;
 
 * {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .myActive {
-    color: $HColor !important;
+  color: $HColor !important;
 }
 
 .newSection {
-    position: relative;
-    z-index: 3;
-    padding: 100px 20px 20px 20px;
-
+  position: relative;
+  z-index: 3;
+  padding: 100px 20px 20px 20px;
 }
 
 .reveal {
-    transform: translateX(0px) translateY(0px);
-    opacity: 1;
-    transition: all 1.5s ease-in-out;
+  transform: translateX(0px) translateY(0px);
+  opacity: 1;
+  transition: all 1.5s ease-in-out;
 }
 
 @mixin myButton($bkColor: #888) {
-    color: rgb(5, 5, 5);
-    border-radius: 5px;
-    padding: 10px 20px;
-    margin: 20px auto;
-    background-color: $bkColor;
+  color: rgb(5, 5, 5);
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 20px auto;
+  background-color: $bkColor;
 }
 
-@mixin myrotate($rotation : 1) {
-    transform: rotate(calc(360deg / -8 * $rotation)) perspective(1px) translateZ(0);
-    transition: all 0.5s ease-in-out;
+@mixin myrotate($rotation: 1) {
+  transform: rotate(calc(360deg / -8 * $rotation)) perspective(1px)
+    translateZ(0);
+  transition: all 0.5s ease-in-out;
 }
 
 @mixin fixedDiv {
-    position: fixed;
-    left: 0;
-    width: 24%;
-    box-shadow: 0 1px 4px 0 rgba(15, 15, 20, 60%);
-    background: rgba($color: $fristColor, $alpha: 0.9);
+  position: fixed;
+  left: 0;
+  width: 24%;
+  box-shadow: 0 1px 4px 0 rgba(15, 15, 20, 60%);
+  background: rgba($color: $fristColor, $alpha: 0.9);
 }
 
 @mixin myBk($bk: #888) {
-    width: 100%;
-    height: 100%;
-    background: $bk;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 100%;
+  height: 100%;
+  background: $bk;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .socialHover {
-    .fa-facebook:hover {
-        color: #374bff;
-    }
+  .fa-facebook:hover {
+    color: #374bff;
+  }
 
-    .fa-instagram:hover {
-        color: #d44271;
-    }
+  .fa-instagram:hover {
+    color: #d44271;
+  }
 
-    .fa-twitter:hover {
-        color: #1e89d1;
-    }
+  .fa-twitter:hover {
+    color: #1e89d1;
+  }
 
-    .fa-linkedin:hover {
-        color: #18668a;
-    }
+  .fa-linkedin:hover {
+    color: #18668a;
+  }
 
-    .fa-facebook-messenger:hover {
-        color: #00aeff;
-    }
+  .fa-facebook-messenger:hover {
+    color: #00aeff;
+  }
 
-    .fa-envelope:hover {
-        color: #d2f556;
-    }
+  .fa-envelope:hover {
+    color: #d2f556;
+  }
 
-    .fa-github:hover {
-        color: #828a8d;
-    }
+  .fa-github:hover {
+    color: #828a8d;
+  }
 
-    .fa-whatsapp:hover {
-        color: #1bdf5c;
-    }
+  .fa-whatsapp:hover {
+    color: #1bdf5c;
+  }
 }
 
 @mixin myul() {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
 }
 
 .sectionHeader {
-    font-size: $standerdFont + 15;
-    margin-bottom: 20px;
-    font-family: 'Kalam', "cursive";
-    text-align: center;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #FFF;
+  font-size: $standerdFont + 15;
+  margin-bottom: 20px;
+  font-family: "Kalam", "cursive";
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
 }
 
 .normalH {
-    font-size: $standerdFont -5;
+  font-size: $standerdFont -5;
 }
 
 .avatar {
-    border: 20px solid rgba(0, 0, 0, 0.4);
-    border-radius: 50%;
-    width: 180px;
-    height: 180px;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 20px;
+  border: 20px solid rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
 
-    .img {
-        @include myBk(url(../img/avatar.jpg));
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        overflow: hidden;
-    }
+  .img {
+    @include myBk(url(../img/avatar.jpg));
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+  }
 }
 
 body::-webkit-scrollbar,
 .infoCard::-webkit-scrollbar {
-    width: 1em;
+  width: 1em;
 }
 
 body::-webkit-scrollbar-track,
 .infoCard::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.3);
 }
 
 body::-webkit-scrollbar-thumb,
 .infoCard::-webkit-scrollbar-thumb {
-    background-color: $fristColor;
-    outline: 1px solid $secondColor;
-    height: 30px;
+  background-color: $fristColor;
+  outline: 1px solid $secondColor;
+  height: 30px;
 }
 
 .infoCard {
+  @include myBk(linear-gradient(0deg, $fristColor, $secondColor 80%));
+  height: 100vh;
+  overflow-y: scroll;
+  position: fixed;
+  width: 25%;
 
-    @include myBk(linear-gradient(0deg, $fristColor, $secondColor 80%));
-    height: 100vh;
-    overflow-y: scroll;
-    position: fixed;
-    width: 25%;
+  .myCard {
+    padding: 20px 10px 50px 10px;
+    text-align: center;
+    color: #fff;
 
+    .headCard {
+      @include fixedDiv;
+      top: 0;
 
-    .myCard {
-        padding: 20px 10px 50px 10px;
-        text-align: center;
-        color: #FFF;
+      .imgCon {
+        @extend .avatar;
+      }
 
-        .headCard {
-            @include fixedDiv;
-            top: 0;
+      .title {
+        padding-bottom: 20px;
 
-            .imgCon {
-                @extend .avatar;
-            }
-
-            .title {
-                padding-bottom: 20px;
-
-                h3 {
-                    color: $HColor;
-                }
-            }
+        h3 {
+          color: $HColor;
         }
-
-        .cardBody {
-            .info {
-                margin-top: 320px;
-                text-align: left;
-                padding: 15px;
-                background-color: rgba($color: $fristColor, $alpha: 0.3);
-
-                ul {
-                    margin-bottom: 0;
-                    padding-left: 0;
-
-                    li {
-                        display: flex;
-                        justify-content: space-between;
-                    }
-                }
-            }
-
-            .skills {
-                padding: 30px 0 20px 0;
-
-                h3 {
-
-                    font-size: $standerdFont + 6;
-                    font-weight: bold;
-                    margin: 0;
-                    color: $HColor;
-                    font-family: "Kalam";
-                }
-
-                ul {
-                    padding-left: 0;
-
-                    .skill {
-                        padding: 10px 20px;
-                        margin-bottom: 10px;
-
-                        .con {
-                            height: 10px;
-                            background-color: $fristColor;
-
-                            .val {
-                                height: 100%;
-                                background-color: #FFF
-                            }
-                        }
-                    }
-
-                    .html {
-                        .val {
-                            width: 95%
-                        }
-                    }
-
-                    .css {
-                        .val {
-                            width: 75%
-                        }
-                    }
-
-                    .js {
-                        .val {
-                            width: 70%
-                        }
-                    }
-
-                    .angular {
-                        .val {
-                            width: 60%
-                        }
-                    }
-                }
-            }
-
-            .knowledge {
-                text-align: left;
-                padding: 20px;
-                background-color: rgba($color: $fristColor, $alpha: 0.3);
-
-                li {
-                    i {
-                        margin-right: 12px;
-                        color: $HColor
-                    }
-                }
-            }
-
-            .btn {
-                @include myButton($fristColor);
-                color: #FFF;
-                box-shadow: 0 1px 4px 0 rgba(15, 15, 20, 60%);
-                transition: all 0.5s ease-in-out;
-            }
-
-            :hover {
-                background-color: $secondColor;
-            }
-        }
-
-        .contacts {
-            display: flex;
-            @include fixedDiv;
-            bottom: 0;
-            margin-bottom: 0;
-            padding: 10px 0;
-            justify-content: space-evenly;
-
-            li {
-                i {
-                    font-size: 30px;
-                    transition: all 0.5s ease-in-out;
-                    cursor: pointer;
-                }
-
-                @extend .socialHover;
-            }
-        }
-
+      }
     }
+
+    .cardBody {
+      .info {
+        margin-top: 320px;
+        text-align: left;
+        padding: 15px;
+        background-color: rgba($color: $fristColor, $alpha: 0.3);
+
+        ul {
+          margin-bottom: 0;
+          padding-left: 0;
+
+          li {
+            display: flex;
+            justify-content: space-between;
+          }
+        }
+      }
+
+      .skills {
+        padding: 30px 0 20px 0;
+
+        h3 {
+          font-size: $standerdFont + 6;
+          font-weight: bold;
+          margin: 0;
+          color: $HColor;
+          font-family: "Kalam";
+        }
+
+        ul {
+          padding-left: 0;
+
+          .skill {
+            padding: 10px 20px;
+            margin-bottom: 10px;
+
+            .con {
+              height: 10px;
+              background-color: $fristColor;
+
+              .val {
+                height: 100%;
+                background-color: #fff;
+              }
+            }
+          }
+
+          .html {
+            .val {
+              width: 95%;
+            }
+          }
+
+          .css {
+            .val {
+              width: 75%;
+            }
+          }
+
+          .js {
+            .val {
+              width: 70%;
+            }
+          }
+
+          .angular {
+            .val {
+              width: 60%;
+            }
+          }
+
+          .react {
+            .val {
+              width: 70%;
+            }
+          }
+        }
+      }
+
+      .knowledge {
+        text-align: left;
+        padding: 20px;
+        background-color: rgba($color: $fristColor, $alpha: 0.3);
+
+        li {
+          a {
+            margin-right: 12px;
+            color: $HColor;
+          }
+        }
+      }
+
+      .btn {
+        @include myButton($fristColor);
+        color: #fff;
+        box-shadow: 0 1px 4px 0 rgba(15, 15, 20, 60%);
+        transition: all 0.5s ease-in-out;
+      }
+
+      :hover {
+        background-color: $secondColor;
+      }
+    }
+
+    .contacts {
+      display: flex;
+      @include fixedDiv;
+      bottom: 0;
+      margin-bottom: 0;
+      padding: 10px 0;
+      justify-content: space-evenly;
+
+      li {
+        transition: all 0.5s ease-in-out;
+        a {
+            color: #FFF;   
+          font-size: 30px;
+          transition: all 0.5s ease-in-out;
+          cursor: pointer;
+        }
+        @extend .socialHover;
+      }
+    }
+  }
 }
 
 /////////////////////////////////////////
 
 @keyframes upDown {
-    0% {
-        top: -40px;
-    }
+  0% {
+    top: -40px;
+  }
 
-    100% {
-        top: 40px;
-    }
+  100% {
+    top: 40px;
+  }
 }
 
 .allContent {
+  @include myBk(url(../img/bg.jpg));
+  background-size: cover;
+  background-attachment: fixed;
+  height: auto;
+  position: relative;
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: $fristColor, $alpha: 0.8);
+  }
+
+  .myNav {
+    color: aliceblue;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+
+    .navbar {
+      @include myBk(linear-gradient(159deg, $fristColor, $secondColor 100%));
+      z-index: 100;
+
+      .navbar-brand {
+        margin-left: 50px;
+        font-size: 30px;
+        color: #fff;
+        font-family: "Forte";
+
+        span {
+          color: $HColor;
+          font-size: 35px;
+        }
+      }
+
+      .collapse {
+        padding: 10px;
+
+        .navbar-nav {
+          display: flex;
+          width: 75%;
+          justify-content: space-around;
+
+          .nav-item {
+            .nav-link {
+              text-transform: capitalize;
+              color: #fff;
+              font-weight: 700;
+              transition: all 0.5s ease-in-out;
+            }
+
+            .nav-link:hover {
+              color: $HColor;
+            }
+
+            .colors {
+              @include myul();
+              justify-content: space-around;
+
+              .color {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                margin-right: 10px;
+                cursor: pointer;
+                border: 1px solid #fff;
+                margin-top: 10px;
+              }
+
+              .one {
+                background: linear-gradient(159deg, #101725, #3d6592 100%);
+              }
+
+              .two {
+                background: linear-gradient(159deg, #4c250d, #1f1c18 100%);
+              }
+
+              .three {
+                background: linear-gradient(159deg, #191624, #000 100%);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #banar {
+    @extend .newSection;
+    margin-top: 75px;
     @include myBk(url(../img/bg.jpg));
     background-size: cover;
     background-attachment: fixed;
-    height: auto;
-    position: relative;
+    height: 66vh;
+    padding-bottom: 0;
 
-    .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        width: 100%;
+    .row {
+      margin: 0;
+
+      .content {
+        display: flex;
+        align-content: center;
         height: 100%;
-        background-color: rgba($color: $fristColor, $alpha: 0.8);
-    }
 
-    .myNav {
-        color: aliceblue;
-        position: fixed;
-        width: 100%;
-        top: 0;
-        z-index: 100;
+        .text {
+          position: relative;
+          z-index: 2;
+          color: #fff;
+          align-self: center;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          width: 100%;
 
+          #code {
+            font-size: 24px;
 
-        .navbar {
-            @include myBk(linear-gradient(159deg, $fristColor, $secondColor 100%));
-            z-index: 100;
-
-            .navbar-brand {
-                margin-left: 50px;
-                font-size: 30px;
-                color: #FFF;
-                font-family: "Forte";
-
-                span {
-                    color: $HColor;
-                    font-size: 35px;
-
-                }
+            #span1,
+            #span2 {
+              color: $HColor;
             }
-
-            .collapse {
-                padding: 10px;
-
-                .navbar-nav {
-                    display: flex;
-                    width: 75%;
-                    justify-content: space-around;
-
-                    .nav-item {
-                        .nav-link {
-                            text-transform: capitalize;
-                            color: #FFF;
-                            font-weight: 700;
-                            transition: all 0.5s ease-in-out;
-                        }
-
-                        .nav-link:hover {
-                            color: $HColor;
-                        }
-
-                        .colors {
-                            @include myul();
-                            justify-content: space-around;
-
-                            .color {
-                                width: 20px;
-                                height: 20px;
-                                border-radius: 50%;
-                                margin-right: 10px;
-                                cursor: pointer;
-                                border: 1px solid #FFF;
-                                margin-top: 10px;
-                            }
-
-                            .one {
-                                background: linear-gradient(159deg, #101725, #3d6592 100%)
-                            }
-
-                            .two {
-                                background: linear-gradient(159deg, #4c250d, #1F1C18 100%);
-                            }
-
-                            .three {
-                                background: linear-gradient(159deg, #191624, #000 100%);
-                            }
-                        }
-                    }
-                }
-            }
+          }
         }
-    }
+      }
 
-    #banar {
-        @extend .newSection;
-        margin-top: 75px;
-        @include myBk(url(../img/bg.jpg));
-        background-size: cover;
-        background-attachment: fixed;
-        height: 66vh;
-        padding-bottom: 0;
+      .banarImg {
+        position: relative;
+        z-index: 5;
+        height: 100%;
 
-        .row {
-            margin: 0;
-
-            .content {
-                display: flex;
-                align-content: center;
-                height: 100%;
-
-                .text {
-                    position: relative;
-                    z-index: 2;
-                    color: #FFF;
-                    align-self: center;
-                    display: flex;
-                    flex-direction: column;
-                    text-align: center;
-                    width: 100%;
-
-                    #code {
-                        font-size: 24px;
-
-                        #span1,
-                        #span2 {
-                            color: $HColor;
-                        }
-                    }
-                }
-            }
-
-            .banarImg {
-                position: relative;
-                z-index: 5;
-                height: 100%;
-
-                .img {
-                    @include myBk(url("./../img/banar3-1.png"));
-                    height: 100%;
-
-                }
-            }
+        .img {
+          @include myBk(url("./../img/banar3-1.png"));
+          height: 100%;
         }
-
+      }
     }
+  }
 
+  #experiance {
+    @extend .newSection;
+    padding: 30px 20px;
+    background-color: $fristColor;
+    color: #fff;
+    font-size: $standerdFont;
+    font-weight: 700;
+
+    .ex {
+      background-color: $secondColor;
+      margin-bottom: 15px;
+      padding: 20px 0;
+      align-items: center;
+      border-radius: 5px;
+      justify-content: center;
+
+      .num {
+        span {
+          color: $HColor;
+        }
+      }
+
+      p {
+        margin-bottom: 0;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
     #experiance {
-        @extend .newSection;
-        padding: 30px 20px;
-        background-color: $fristColor;
-        color: #FFF;
-        font-size: $standerdFont;
-        font-weight: 700;
+      font-size: $standerdFont - 4;
+    }
+  }
 
-        .ex {
-            background-color: $secondColor;
-            margin-bottom: 15px;
-            padding: 20px 0;
-            align-items: center;
-            border-radius: 5px;
-            justify-content: center;
+  #about {
+    @extend .newSection;
+    padding: 100px 50px 0 50px;
+    color: #fff;
 
-            .num {
-                span {
-                    color: $HColor;
-                }
-            }
-
-            p {
-                margin-bottom: 0;
-                margin-left: 10px;
-            }
-        }
+    h3 {
+      @extend .sectionHeader;
     }
 
-    @media (max-width:992px) {
-        #experiance {
-            font-size: $standerdFont - 4;
+    .row {
+      .mydiv {
+        @include myBk(linear-gradient(0deg, $fristColor, $secondColor 80%));
+        padding: 30px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid $HColor;
+        box-shadow: 0 1px 4px 0 $HColor;
+      }
+
+      .header-con {
+        color: $HColor;
+
+        .intro-head {
+          margin-bottom: 10px;
+          font-size: 24px;
         }
-    }
+      }
 
-    #about {
+      .intro {
+        @extend .mydiv;
+        height: auto;
 
-        @extend .newSection;
-        padding: 100px 50px 0 50px;
-        color: #fff;
-
-        h3 {
-            @extend .sectionHeader;
+        p {
+          padding-left: 20px;
         }
+      }
 
-        .row {
-            .mydiv {
-                @include myBk(linear-gradient(0deg, $fristColor, $secondColor 80%));
-                padding: 30px;
-                padding-bottom: 10px;
-                margin-bottom: 10px;
-                border-radius: 5px;
-                border: 1px solid $HColor;
-                box-shadow: 0 1px 4px 0 $HColor;
+      .info {
+        @extend .mydiv;
+        margin-bottom: 0;
+
+        ul {
+          li {
+            label {
+              font-weight: 700;
+              font-size: $standerdFont - 2;
+              color: $HColor;
+              margin-right: 10px;
             }
 
-            .header-con {
+            span {
+              a {
+                text-decoration: none;
+                color: #fff;
+                transition: all 0.5s ease-in-out;
+              }
+
+              :hover {
                 color: $HColor;
-
-                .intro-head {
-                    margin-bottom: 10px;
-                    font-size: 24px;
-                }
+              }
             }
-
-            .intro {
-                @extend .mydiv;
-                height: auto;
-
-                p {
-                    padding-left: 20px
-                }
-            }
-
-
-            .info {
-                @extend .mydiv;
-                margin-bottom: 0;
-
-                ul {
-                    li {
-                        label {
-                            font-weight: 700;
-                            font-size: $standerdFont - 2;
-                            color: $HColor;
-                            margin-right: 10px;
-                        }
-
-                        span {
-                            a {
-                                text-decoration: none;
-                                color: #FFF;
-                                transition: all 0.5s ease-in-out;
-                            }
-
-                            :hover {
-                                color: $HColor
-                            }
-                        }
-                    }
-                }
-            }
-
-            .lang {
-                @extend .mydiv;
-                height: auto;
-                padding: 20px;
-                padding-bottom: 19px;
-                margin-bottom: 10px;
-
-                .header {
-                    font-size: $standerdFont + 5;
-                    margin-bottom: 30px;
-                    color: $HColor;
-                }
-
-                .col-4 {
-                    justify-content: center;
-                    display: flex;
-                }
-
-                text-align: center;
-
-                .myprogress {
-                    position: relative;
-                    width: 65%;
-                }
-
-                .shape {
-                    position: relative;
-                }
-
-                svg {
-                    display: block;
-                    width: 100%;
-                }
-
-                .cr {
-                    stroke: $fristColor;
-                }
-
-                .cr2 {
-                    stroke: #FFF;
-                    stroke-dasharray: 292.273, 292.273;
-                }
-
-                .arabic {
-                    .cr2 {
-                        stroke-dashoffset: 292;
-                    }
-                }
-
-                .english {
-                    .cr2 {
-                        stroke-dashoffset: 292;
-                    }
-                }
-
-                .frensh {
-                    .cr2 {
-                        stroke-dashoffset: 292;
-                    }
-                }
-
-                h3 {
-                    font-size: $standerdFont + 3;
-                    margin-top: 5px;
-                }
-
-                .progressbar-text {
-                    position: absolute;
-                    left: 50%;
-                    top: 50%;
-                    padding: 0px;
-                    margin: 0px;
-                    transform: translate(-50%, -50%);
-                    color: $HColor;
-                }
-            }
+          }
         }
-    }
+      }
 
-    #Skills {
-        @extend .newSection;
-        background-color: $fristColor;
-        margin-top: 50px;
+      .lang {
+        @extend .mydiv;
+        height: auto;
+        padding: 20px;
+        padding-bottom: 19px;
+        margin-bottom: 10px;
 
         .header {
-            @extend .sectionHeader;
-            color: #FFF;
-            margin-bottom: 30px;
+          font-size: $standerdFont + 5;
+          margin-bottom: 30px;
+          color: $HColor;
         }
 
-        .mySkills {
-            .skill {
-                margin-bottom: 25px;
-                display: flex;
-                justify-content: center;
-
-                .html {
-                    @include myBk(url("../img/html.png"))
-                }
-
-                .css {
-                    @include myBk(url("../img/css.png"))
-                }
-
-                .js {
-                    @include myBk(url("../img/js.png"))
-                }
-
-                .bootstrap {
-                    @include myBk(url("../img/bootstrap.png"))
-                }
-
-                .angular {
-                    @include myBk(url("../img/angular.png"))
-                }
-
-                .pug {
-                    @include myBk(url("../img/pug.png"))
-                }
-
-                .sass {
-                    @include myBk(url("../img/sass.png"))
-                }
-
-                .git {
-                    @include myBk(url("../img/git.png"))
-                }
-
-                .gulp {
-                    @include myBk(url("../img/gulp.png"))
-                }
-
-                .img {
-                    width: 130px;
-                    height: 130px;
-                    background-size: cover;
-                    transition: all 0.5s ease-in-out;
-                    box-shadow: 0 1px 10px 0 rgba(253, 253, 255, 0.8);
-                    border-radius: 5px;
-                    border: 1px solid $HColor;
-                }
-
-                :hover {
-                    transform: scale(1.2);
-                }
-            }
+        .col-4 {
+          justify-content: center;
+          display: flex;
         }
+
+        text-align: center;
+
+        .myprogress {
+          position: relative;
+          width: 65%;
+        }
+
+        .shape {
+          position: relative;
+        }
+
+        svg {
+          display: block;
+          width: 100%;
+        }
+
+        .cr {
+          stroke: $fristColor;
+        }
+
+        .cr2 {
+          stroke: #fff;
+          stroke-dasharray: 292.273, 292.273;
+        }
+
+        .arabic {
+          .cr2 {
+            stroke-dashoffset: 292;
+          }
+        }
+
+        .english {
+          .cr2 {
+            stroke-dashoffset: 292;
+          }
+        }
+
+        .frensh {
+          .cr2 {
+            stroke-dashoffset: 292;
+          }
+        }
+
+        h3 {
+          font-size: $standerdFont + 3;
+          margin-top: 5px;
+        }
+
+        .progressbar-text {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          padding: 0px;
+          margin: 0px;
+          transform: translate(-50%, -50%);
+          color: $HColor;
+        }
+      }
+    }
+  }
+
+  #Skills {
+    @extend .newSection;
+    background-color: $fristColor;
+    margin-top: 50px;
+
+    .header {
+      @extend .sectionHeader;
+      color: #fff;
+      margin-bottom: 30px;
     }
 
-    #Protfolio {
-        @extend .newSection;
-        margin-top: 50px;
-        color: #FFF;
+    .mySkills {
+      .skill {
+        margin-bottom: 25px;
+        display: flex;
+        justify-content: center;
 
-        .myPortfolio {
-            .header-con {
-                @extend .sectionHeader;
-                text-align: center;
-                margin-bottom: 30px;
-            }
-
-            .tabs {
-                padding: 10px 30px;
-
-                ul {
-                    li {
-                        text-align: center;
-                        font-size: 1rem;
-                        padding: 10px;
-                        border: 1px solid $HColor;
-                        margin-right: 10px;
-                        text-transform: uppercase;
-                        transition: all 0.5s ease-in-out;
-                        cursor: pointer;
-                        margin-bottom: 10px;
-                        font-weight: 700;
-                        box-shadow: 0 1px 8px 0 rgba(253, 253, 255, 0.8);
-                    }
-
-                    :hover {
-                        color: #000;
-                        background-color: $HColor;
-                    }
-                }
-            }
-
-            .akla {
-                @include myBk(url("../img/bg_2.jpg"))
-            }
-
-            .carCamp {
-                @include myBk(url("../img/pro-1.jpg"));
-            }
-
-            .mypc {
-                @include myBk(url("../img/pro-3.jpg"));
-            }
-
-            .mawdoo3 {
-                @include myBk(url("../img/prime-img1.png"));
-            }
-
-            .dentCare {
-                @include myBk(url("../img/dent.jpg"));
-            }
-
-            .amazon {
-                @include myBk(url("../img/Amazon.jpg"));
-            }
-
-            .project {
-                background-size: cover;
-                margin: 20px;
-                height: 300px;
-                width: auto;
-                border: 1px solid $HColor;
-                box-shadow: 0 1px 8px 0 rgba(253, 253, 255, 0.8);
-
-                .content {
-                    @include myBk(rgba($color: $fristColor, $alpha: 0.8));
-                    text-align: center;
-                    margin: auto;
-                    flex-direction: column;
-                    justify-content: center;
-                    display: none;
-                    transition: all 0.5s ease-in-out;
-                    padding: 10px;
-
-                    .header {
-                        padding: 30px 0 10px 0;
-                        font-family: 'Kalam';
-                        letter-spacing: 2.7px;
-                    }
-
-                    .show {
-                        margin: 0 auto;
-                        border: 1px solid #FFF;
-                        color: #000;
-                        text-decoration: none;
-                        background-color: $HColor;
-                        font-size: 14px;
-                        line-height: 24px;
-                        letter-spacing: 1px;
-                        width: 120px;
-                        font-weight: bold;
-                        padding: 10px 30px;
-                        border-top-left-radius: 20px;
-                        border-top-right-radius: 0;
-                        border-bottom-right-radius: 20px;
-                        border-bottom-left-radius: 0px;
-                        transition: all 0.5s ease-in-out;
-                    }
-
-                    .show:hover {
-                        color: #FFF;
-                        background-color: $fristColor;
-                    }
-                }
-            }
-
-            .project:hover {
-                .content {
-                    display: flex;
-                }
-            }
-
+        .html {
+          @include myBk(url("../img/html.png"));
         }
+
+        .css {
+          @include myBk(url("../img/css.png"));
+        }
+
+        .js {
+          @include myBk(url("../img/js.png"));
+        }
+
+        .bootstrap {
+          @include myBk(url("../img/bootstrap.png"));
+        }
+
+        .angular {
+          @include myBk(url("../img/angular.png"));
+        }
+        .react {
+          @include myBk(url("../img/react.png"));
+        }
+        .pug {
+          @include myBk(url("../img/pug.png"));
+        }
+
+        .sass {
+          @include myBk(url("../img/sass.png"));
+        }
+
+        .git {
+          @include myBk(url("../img/git.png"));
+        }
+
+        .gulp {
+          @include myBk(url("../img/gulp.png"));
+        }
+
+        .img {
+          width: 130px;
+          height: 130px;
+          background-size: cover;
+          transition: all 0.5s ease-in-out;
+          box-shadow: 0 1px 10px 0 rgba(253, 253, 255, 0.8);
+          border-radius: 5px;
+          border: 1px solid $HColor;
+        }
+
+        :hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+
+  #Protfolio {
+    @extend .newSection;
+    margin-top: 50px;
+    color: #fff;
+
+    .myPortfolio {
+      .header-con {
+        @extend .sectionHeader;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .tabs {
+        padding: 10px 30px;
+
+        ul {
+          li {
+            text-align: center;
+            font-size: 1rem;
+            padding: 10px;
+            border: 1px solid $HColor;
+            margin-right: 10px;
+            text-transform: uppercase;
+            transition: all 0.5s ease-in-out;
+            cursor: pointer;
+            margin-bottom: 10px;
+            font-weight: 700;
+            box-shadow: 0 1px 8px 0 rgba(253, 253, 255, 0.8);
+          }
+
+          :hover {
+            color: #000;
+            background-color: $HColor;
+          }
+        }
+      }
+
+      .akla {
+        @include myBk(url("../img/bg_2.jpg"));
+      }
+
+      .carCamp {
+        @include myBk(url("../img/pro-1.jpg"));
+      }
+
+      .mypc {
+        @include myBk(url("../img/pro-3.jpg"));
+      }
+
+      .mawdoo3 {
+        @include myBk(url("../img/prime-img1.png"));
+      }
+
+      .dentCare {
+        @include myBk(url("../img/dent.jpg"));
+      }
+
+      .amazon {
+        @include myBk(url("../img/Amazon.jpg"));
+      }
+
+      .project {
+        background-size: cover;
+        margin: 20px;
+        height: 300px;
+        width: auto;
+        border: 1px solid $HColor;
+        box-shadow: 0 1px 8px 0 rgba(253, 253, 255, 0.8);
+
+        .content {
+          @include myBk(rgba($color: $fristColor, $alpha: 0.8));
+          text-align: center;
+          margin: auto;
+          flex-direction: column;
+          justify-content: center;
+          display: none;
+          transition: all 0.5s ease-in-out;
+          padding: 10px;
+
+          .header {
+            padding: 30px 0 10px 0;
+            font-family: "Kalam";
+            letter-spacing: 2.7px;
+          }
+
+          .show {
+            margin: 0 auto;
+            border: 1px solid #fff;
+            color: #000;
+            text-decoration: none;
+            background-color: $HColor;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 1px;
+            width: 120px;
+            font-weight: bold;
+            padding: 10px 30px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 0px;
+            transition: all 0.5s ease-in-out;
+          }
+
+          .show:hover {
+            color: #fff;
+            background-color: $fristColor;
+          }
+        }
+      }
+
+      .project:hover {
+        .content {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
     }
 
-    @keyframes fadeOut {
-        from {
-            opacity: 1;
-        }
+    to {
+      opacity: 0;
+    }
+  }
 
-        to {
-            opacity: 0;
-        }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
     }
 
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
+    to {
+      opacity: 1;
+    }
+  }
 
-        to {
-            opacity: 1;
-        }
+  #education {
+    @extend .newSection;
+    background-color: $fristColor;
+    margin-top: 50px;
+    color: #fff;
+    padding-bottom: 30px;
+
+    .header-con {
+      @extend .sectionHeader;
     }
 
-    #education {
-        @extend .newSection;
-        background-color: $fristColor;
-        margin-top: 50px;
-        color: #FFF;
-        padding-bottom: 30px;
+    .row {
+      .card {
+        position: relative;
+        @include myBk(linear-gradient(0deg, $secondColor, $fristColor 80%));
+        border: 1px solid $HColor;
+        box-shadow: 0px 0 8px $HColor;
 
-        .header-con {
-            @extend .sectionHeader;
+        .from {
+          position: absolute;
+          font-size: $standerdFont -3;
+          top: 5px;
+          right: 5px;
+          padding: 5px;
+          border-radius: 5px;
+          border: 1px solid $HColor;
+          box-shadow: 0px 0 8px $HColor;
         }
 
-        .row {
-            .card {
-                position: relative;
-                @include myBk(linear-gradient(0deg, $secondColor, $fristColor 80%));
-                border: 1px solid $HColor;
-                box-shadow: 0px 0 8px $HColor;
+        .card-title {
+          font-size: $standerdFont;
+          margin-top: 30px;
+        }
 
-                .from {
-                    position: absolute;
-                    font-size: $standerdFont -3;
-                    top: 5px;
-                    right: 5px;
-                    padding: 5px;
-                    border-radius: 5px;
-                    border: 1px solid $HColor;
-                    box-shadow: 0px 0 8px $HColor;
-                }
+        .card-subtitle {
+          font-size: $standerdFont - 2;
+          margin-top: 10px;
+          color: $HColor;
+          margin-left: 5px;
+        }
 
-                .card-title {
-                    font-size: $standerdFont;
-                    margin-top: 30px;
-                }
+        .card-text {
+          ul {
+            list-style: circle;
 
-                .card-subtitle {
-                    font-size: $standerdFont - 2;
-                    margin-top: 10px;
-                    color: $HColor;
-                    margin-left: 5px;
-                }
-
-                .card-text {
-                    ul {
-                        list-style: circle;
-
-                        li {
-                            font-size: $standerdFont - 3;
-                        }
-                    }
-                }
+            li {
+              font-size: $standerdFont - 3;
             }
+          }
+        }
+      }
+    }
+
+    .item {
+      position: relative;
+    }
+
+    .item::after {
+      display: block;
+      position: absolute;
+      top: 50%;
+      content: "";
+      height: 10px;
+      width: 10px;
+      border: 0;
+      background: #fff;
+      z-index: 3;
+      transform: rotate(45deg);
+      box-shadow: 0 0 10px $HColor;
+    }
+
+    .fci {
+      margin-top: 30px;
+      border-right: 1px solid #fff;
+      position: relative;
+    }
+
+    .fci::after {
+      right: -5px;
+    }
+
+    .school {
+      border-left: 1px solid #fff;
+      margin-right: 1px;
+    }
+
+    .school::after {
+      left: -5px;
+    }
+  }
+
+  #Contact {
+    @extend .newSection;
+
+    .contact {
+      .header-con {
+        @extend .sectionHeader;
+        margin-bottom: 50px;
+      }
+
+      .imgContainer {
+        transform: scale(0.5);
+        position: relative;
+        animation: upDown 2s ease-in-out infinite alternate;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .myicon {
+          i {
+            font-size: 100px;
+            color: #fff;
+          }
         }
 
+        .ways {
+          height: 300px;
+          width: 300px;
+          position: relative;
+          align-items: center;
+          display: flex;
 
-        .item {
-            position: relative;
-        }
-
-        .item::after {
-            display: block;
+          .imgCon {
+            @extend .avatar;
             position: absolute;
-            top: 50%;
-            content: "";
-            height: 10px;
-            width: 10px;
-            border: 0;
-            background: #FFF;
-            z-index: 3;
-            transform: rotate(45deg);
-            box-shadow: 0 0 10px $HColor;
+            top: 30px;
+            left: 60px;
+            transition: all 0.5s ease-in-out;
+          }
+
+          .imgCon:hover {
+            transform: scale(0.8);
+          }
+
+          .social {
+            position: absolute;
+            left: 0%;
+            list-style: none;
+            transition: all 0.5s ease-in-out;
+            opacity: 0;
+            transform-origin: 150px;
+            opacity: 1;
+
+            a {
+              i {
+                color: #fff;
+                font-size: $standerdFont + 15;
+                text-shadow: 0 0 16px rgba(253, 253, 255, 0.8);
+                transition: all 0.5s ease-in-out;
+              }
+
+              i:hover {
+                text-shadow: 0 0 2px rgba(253, 253, 255, 0.8);
+                font-size: $standerdFont + 25;
+              }
+
+              @extend .socialHover;
+            }
+          }
+
+          .facebook {
+            transform: rotate(calc(360deg / 8 * 1));
+            transition-delay: calc(0.1s);
+
+            i {
+              transform: rotate(calc(360deg / -8 * 1));
+            }
+          }
+
+          .twitter {
+            transform: rotate(calc(360deg / 8 * 2));
+            transition-delay: calc(0.1s * 2);
+
+            i {
+              transform: rotate(calc(360deg / -8 * 2));
+            }
+          }
+
+          .mail {
+            transform: rotate(calc(360deg / 8 * 3));
+            transition-delay: calc(0.1s * 3);
+
+            i {
+              transform: rotate(calc(360deg / -8 * 3));
+            }
+          }
+
+          .linkedin {
+            transform: rotate(calc(360deg / 8 * 4));
+            transition-delay: calc(0.1s * 4);
+
+            i {
+              transform: rotate(calc(360deg / -8 * 4));
+            }
+          }
+
+          .messenger {
+            transform: rotate(calc(360deg / 8 * 5));
+            transition-delay: calc(0.1s * 5);
+
+            i {
+              transform: rotate(calc(360deg / -8 * 5));
+            }
+          }
+
+          .github {
+            transform: rotate(calc(360deg / 8 * 6));
+            transition-delay: calc(0.1s * 6);
+
+            i {
+              transform: rotate(calc(360deg / -8 * 6));
+            }
+          }
+
+          .instagram {
+            transform: rotate(calc(360deg / 8 * 7));
+            transition-delay: calc(0.1s * 7);
+
+            i {
+              transform: rotate(calc(360deg / -8 * 7));
+            }
+          }
+
+          .whatsapp {
+            transform: rotate(calc(360deg / 8 * 8));
+            transition-delay: calc(0.1s * 8);
+
+            i {
+              transform: rotate(calc(360deg / -8 * 8));
+            }
+          }
         }
-
-        .fci {
-            margin-top: 30px;
-            border-right: 1px solid #FFF;
-            position: relative;
-        }
-
-        .fci::after {
-            right: -5px;
-        }
-
-        .school {
-            border-left: 1px solid #FFF;
-            margin-right: 1px;
-        }
-
-        .school::after {
-            left: -5px;
-        }
-
-
+      }
     }
 
-    #Contact {
-        @extend .newSection;
-
-        .contact {
-            .header-con {
-                @extend .sectionHeader;
-                margin-bottom: 50px;
-            }
-
-            .imgContainer {
-                transform: scale(.5);
-                position: relative;
-                animation: upDown 2s ease-in-out infinite alternate;
-
-                img {
-                    width: 100%;
-                }
-            }
-
-            .links {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                .myicon {
-                    i {
-                        font-size: 100px;
-                        color: #FFF;
-                    }
-                }
-
-                .ways {
-                    height: 300px;
-                    width: 300px;
-                    position: relative;
-                    align-items: center;
-                    display: flex;
-
-                    .imgCon {
-                        @extend .avatar;
-                        position: absolute;
-                        top: 30px;
-                        left: 60px;
-                        transition: all 0.5s ease-in-out;
-                    }
-
-                    .imgCon:hover {
-                        transform: scale(.8);
-                    }
-
-                    .social {
-                        position: absolute;
-                        left: 0%;
-                        list-style: none;
-                        transition: all 0.5s ease-in-out;
-                        opacity: 0;
-                        transform-origin: 150px;
-                        opacity: 1;
-
-                        a {
-                            i {
-                                color: #FFF;
-                                font-size: $standerdFont+15;
-                                text-shadow: 0 0 16px rgba(253, 253, 255, 0.8);
-                                transition: all 0.5s ease-in-out;
-                            }
-
-                            i:hover {
-                                text-shadow: 0 0 2px rgba(253, 253, 255, 0.8);
-                                font-size: $standerdFont + 25;
-
-                            }
-
-                            @extend .socialHover;
-                        }
-                    }
-
-                    .facebook {
-                        transform: rotate(calc(360deg / 8 * 1));
-                        transition-delay: calc(0.1s);
-
-                        i {
-                            transform: rotate(calc(360deg / -8 * 1));
-                        }
-                    }
-
-                    .twitter {
-                        transform: rotate(calc(360deg / 8 * 2));
-                        transition-delay: calc(0.1s * 2);
-
-                        i {
-                            transform: rotate(calc(360deg / -8 * 2));
-                        }
-                    }
-
-                    .mail {
-                        transform: rotate(calc(360deg / 8 * 3));
-                        transition-delay: calc(0.1s * 3);
-
-                        i {
-                            transform: rotate(calc(360deg / -8 * 3));
-                        }
-                    }
-
-                    .linkedin {
-                        transform: rotate(calc(360deg / 8 * 4));
-                        transition-delay: calc(0.1s * 4);
-
-                        i {
-                            transform: rotate(calc(360deg / -8 * 4));
-                        }
-                    }
-
-                    .messenger {
-                        transform: rotate(calc(360deg / 8 * 5));
-                        transition-delay: calc(0.1s * 5);
-
-                        i {
-                            transform: rotate(calc(360deg / -8 * 5));
-                        }
-                    }
-
-                    .github {
-                        transform: rotate(calc(360deg / 8 * 6));
-                        transition-delay: calc(0.1s * 6);
-
-                        i {
-                            transform: rotate(calc(360deg / -8 * 6));
-                        }
-                    }
-
-                    .instagram {
-                        transform: rotate(calc(360deg / 8 * 7));
-                        transition-delay: calc(0.1s * 7);
-
-                        i {
-                            transform: rotate(calc(360deg / -8 * 7));
-                        }
-                    }
-
-                    .whatsapp {
-                        transform: rotate(calc(360deg / 8 * 8));
-                        transition-delay: calc(0.1s * 8);
-
-                        i {
-                            transform: rotate(calc(360deg / -8 * 8));
-                        }
-                    }
-                }
-
-            }
-
-        }
-
-        .hr {
-            height: 1px;
-            background-color: #FFF;
-            margin: 30px 40px;
-            box-shadow: 0 0 16px 2px rgba(253, 253, 255, 0.8);
-        }
-
-        .copyRight {
-            color: #FFF;
-            font-size: 21px;
-
-            p {
-                margin: 0;
-
-                span {
-                    color: $HColor;
-                    text-shadow: 0px 1px 8px $HColor;
-                }
-            }
-        }
+    .hr {
+      height: 1px;
+      background-color: #fff;
+      margin: 30px 40px;
+      box-shadow: 0 0 16px 2px rgba(253, 253, 255, 0.8);
     }
+
+    .copyRight {
+      color: #fff;
+      font-size: 21px;
+
+      p {
+        margin: 0;
+
+        span {
+          color: $HColor;
+          text-shadow: 0px 1px 8px $HColor;
+        }
+      }
+    }
+  }
 }
 
 .music {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: rgba($color: $HColor, $alpha: 0.3);
-    color: $fristColor;
-    left: -86px;
-    top: 17px;
-    z-index: 5;
-    box-shadow: 0 1px 14px 4px $HColor;
-    transition: all 0.5s ease-in-out;
-    cursor: pointer;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba($color: $HColor, $alpha: 0.3);
+  color: $fristColor;
+  left: -86px;
+  top: 17px;
+  z-index: 5;
+  box-shadow: 0 1px 14px 4px $HColor;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
 
-    i {
-        font-size: 27px;
-        margin: 9px;
-        color: $fristColor;
-    }
+  i {
+    font-size: 27px;
+    margin: 9px;
+    color: $fristColor;
+  }
 }
 
 .music:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 /* *************************************** */
-@media (max-width:992px) {
-    #about {
-        .lang {
-            margin-bottom: 10px
-        }
+@media (max-width: 992px) {
+  #about {
+    .lang {
+      margin-bottom: 10px;
     }
+  }
 
-    #Contact {
-        .fly {
-            display: none;
-        }
+  #Contact {
+    .fly {
+      display: none;
     }
-
+  }
 }
 
 @media (max-width: 767px) {
+  /* ************************************* */
+  .infoCard {
+    position: relative;
+    overflow-y: hidden;
+    width: 100%;
+    height: auto;
 
-    /* ************************************* */
-    .infoCard {
-        position: relative;
-        overflow-y: hidden;
+    .myCard {
+      padding-top: 50px;
+      padding-bottom: 10px;
+      margin-top: 75px;
+
+      .headCard {
+        position: initial;
         width: 100%;
-        height: auto;
+        padding-top: 50px;
+      }
 
+      .cardBody {
+        display: none;
+      }
 
-        .myCard {
-            padding-top: 50px;
-            padding-bottom: 10px;
-            margin-top: 75px;
+      .contacts {
+        display: flex;
+        position: initial;
+        width: 100%;
+      }
+    }
+  }
 
-            .headCard {
-                position: initial;
-                width: 100%;
-                padding-top: 50px;
-            }
+  /* ****************************** */
 
-            .cardBody {
-                display: none;
-            }
+  .allContent {
+    #banar {
+      margin-top: 0;
+      height: 40vh;
 
-            .contacts {
-                display: flex;
-                position: initial;
-                width: 100%;
-            }
+      .content {
+        .text {
+          #code {
+            font-size: 21px !important;
+          }
         }
+      }
+
+      .banarImg {
+        display: none;
+      }
     }
 
-    /* ****************************** */
-
-    .allContent {
-        #banar {
-            margin-top: 0;
-            height: 40vh;
-
-            .content {
-                .text {
-                    #code {
-                        font-size: 21px !important;
-                    }
-                }
-            }
-
-            .banarImg {
-                display: none;
-            }
+    #education {
+      .row {
+        .item {
+          border: none;
+          border-left: 1px solid $HColor;
         }
 
-        #education {
-            .row {
-                .item {
-                    border: none;
-                    border-left: 1px solid $HColor;
-                }
-
-                .fci::after {
-                    left: -5px;
-                }
-
-                .school {
-                    margin-right: 0;
-
-                    .card {
-                        margin-top: 15px;
-                    }
-                }
-            }
+        .fci::after {
+          left: -5px;
         }
-    }
 
-    .music {
-        left: 25px;
-        top: 100px;
-    }
+        .school {
+          margin-right: 0;
 
+          .card {
+            margin-top: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .music {
+    left: 25px;
+    top: 100px;
+  }
 }
-@media (max-width:465px) {
-    .allContent {
-        #banar{
-            .content{
-                .text{
-                    .header{
-                        font-size: 23px;
-                    }
-                    #code{
-                        font-size: 15px;
-                    }
-                }
-            }
+@media (max-width: 465px) {
+  .allContent {
+    #banar {
+      .content {
+        .text {
+          .header {
+            font-size: 23px;
+          }
+          #code {
+            font-size: 15px;
+          }
         }
-        #about{
-            .lang{
-                .progressbar-text{
-                    font-size: 14px !important;
-                }
-                h3{
-                    font-size: 16px !important;
-                }
-            }
-            .header-con{
-                .intro-head{
-                    font-size: 23px !important;
-                }
-            }
-            ul{
-                padding-left: 0 !important;
-                li{
-                    span{
-                        display: block;
-                        font-size: 16px;
-                        
-                    }
-                }
-            }
-        }
-        #Contact {
-            .copyRight {
-                p {
-                    font-size: 18px;
-                }
-            }
-        }
+      }
     }
-
+    #about {
+      .lang {
+        .progressbar-text {
+          font-size: 14px !important;
+        }
+        h3 {
+          font-size: 16px !important;
+        }
+      }
+      .header-con {
+        .intro-head {
+          font-size: 23px !important;
+        }
+      }
+      ul {
+        padding-left: 0 !important;
+        li {
+          span {
+            display: block;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    #Contact {
+      .copyRight {
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+  }
 }
